@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITAPE - Associação de Escalada de Pernambuco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER COM A LOGO -->
+  <header class="main-header">
+    <a href="#" class="brand">
+      <img src="logoitape.png" alt="ITAPÉ Escalada PE" class="hero-logo">
+      <div class="brand-text">
+        <h1>ITAPE - Caminhos de Pedra </h1>
+        <span>Associação Pernambucana de Escalada </span>
+      </div>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+
+  <!-- BARRA DE NAVEGAÇÃO RÁPIDA -->
+  <div class="quick-tabs">
+    <a href="#quem-somos" class="tab-pill active">Quem Somos</a>
+    <a href="#atividades" class="tab-pill">Atividades</a>
+    <a href="#indoor" class="tab-pill">Indoor</a>
+    <a href="#cursos" class="tab-pill">Cursos</a>
+    <a href="#croquiteca" class="tab-pill">Croquiteca</a>
+    <a href="#junte-se" class="tab-pill">Junte-se</a>
+    <a href="#loja" class="tab-pill">Loja</a>
+    <a href="#diretoria" class="tab-pill">Diretoria</a>
+    <a href="#estatuto" class="tab-pill">Estatuto</a>
+    <a href="#contatos" class="tab-pill">Contatos</a>
+  </div>
+
+  <!-- MENU LATERAL (DRAWER) -->
+  <div class="overlay" id="overlay"></div>
+  <nav class="nav-drawer" id="navDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Menu de Navegação</span>
+      <button class="close-btn" id="closeBtn">&times;</button>
+    </div>
+    <div class="nav-links">
+      <a href="#quem-somos" class="drawer-link">1. Quem Somos & História</a>
+      <a href="#atividades" class="drawer-link">2. Atividades e Ações</a>
+      <a href="#indoor" class="drawer-link">3. Escalada Indoor</a>
+      <a href="#cursos" class="drawer-link">4. Cursos e Formação</a>
+      <a href="#croquiteca" class="drawer-link">5. Croquiteca (Vias PE)</a>
+      <a href="#junte-se" class="drawer-link">6. Junte-se a Nós</a>
+      <a href="#loja" class="drawer-link">7. Loja Oficial</a>
+      <a href="#diretoria" class="drawer-link">8. Diretoria</a>
+      <a href="#estatuto" class="drawer-link">9. Estatuto & Termos</a>
+      <a href="#contatos" class="drawer-link">10. Contatos & Redes</a>
+    </div>
+  </nav>
+
+  <!-- HERO TOP BANNER -->
+  <section class="hero">
+    <span class="hero-badge">⚡ Escalada & Conservação em PE</span>
+    <h2>União na Rocha Pernambucana</h2>
+    <p>Preservando nossos picos, conquistando novas vias e fortalecendo a comunidade da escalada.</p>
+    <div class="hero-btns">
+      <a href="#croquiteca" class="btn btn-primary">🗺️ Ver Croquiteca</a>
+      <a href="#junte-se" class="btn btn-secondary">🤝 Seja Associado</a>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- 1. QUEM SOMOS -->
+    <section id="quem-somos" class="reveal">
+      <div class="section-header">
+        <h2>1. Quem Somos, Missão e Visão</h2>
+        <p>A identidade e o compromisso da Associação de Escalada de Pernambuco</p>
+      </div>
+      
+      <div class="grid-2">
+        <div class="card border-accent-orange">
+          <h3 class="card-title text-orange">🎯 Missão</h3>
+          <p>Promover e desenvolver a prática da escalada e do montanhismo em Pernambuco de forma segura, acessível e responsável, incentivando a integração entre pessoas e natureza.</p>
+          <p style="margin-top: 12px;">A associação busca difundir o esporte por meio de educação, eventos e compartilhamento de conhecimento técnico. Atua também na preservação dos ambientes naturais, garantindo o uso sustentável das áreas de escalada.</p>
+        </div>
+
+        <div class="card border-accent-green">
+          <h3 class="card-title text-green">👁️ Visão</h3>
+          <p>A ITAPÉ é guiada pelo compromisso com a segurança, a ética esportiva e o respeito ao meio ambiente. Valoriza a colaboração, o compartilhamento de conhecimento e o crescimento coletivo da comunidade.</p>
+          <p style="margin-top: 12px;">Defende a inclusão e o acesso democrático à prática da escalada, respeitando normas técnicas e ambientais. Também preza pela responsabilidade, transparência e sustentabilidade em todas as suas ações.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ATIVIDADES -->
+    <section id="atividades" class="reveal">
+      <div class="section-header">
+        <h2>2. Atividades e Ações</h2>
+        <p>O que fazemos para fortalecer o esporte no estado</p>
+      </div>
+      <div class="grid-2">
+        <div class="card border-accent-orange">
+          <h3 class="card-title text-orange">🛠️ Manutenção e Reequipamento</h3>
+          <p>Ações contínuas de substituição de grampos e chapeletas antigas por materiais de alta resistência (inox) visando a segurança das vias pernambucanas.</p>
+        </div>
+        <div class="card border-accent-green">
+          <h3 class="card-title text-green">🌿 Acesso à Rocha & Ética</h3>
+          <p>Diálogo com proprietários rurais e órgãos ambientais para garantir e manter o acesso livre e consciente aos setores de escalada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. INDOOR -->
+    <section id="indoor" class="reveal">
+      <div class="section-header">
+        <h2>3. Escalada Indoor</h2>
+        <p>Treinamento e iniciação nos muros parceiros</p>
+      </div>
+      <div class="card">
+        <p style="margin-bottom: 16px;">A escalada indoor é a porta de entrada para muitos praticantes. A Itapé mantém parceria com muros de treino e academias do estado para promover campeonatos regionais e encontros de boulder.</p>
+        <div class="highlight-box">
+          <strong>🧗 Muros Parceiros / Pontos de Treino:</strong>
+          <p style="margin-top: 6px; color: var(--text-muted);">[Espaço reservado para listar as academias e muros parceiros do Recife e interior]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CURSOS -->
+    <section id="cursos" class="reveal">
+      <div class="section-header">
+        <h2>4. Cursos e Formação</h2>
+        <p>Cursos básicos, avançados e de segurança em rocha</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card-title">Curso Básico de Escalada em Rocha (CBER)</h3>
+          <p style="margin-bottom: 16px;">Aprenda os nós, procedimentos de segurança, belay e movimentação básica na rocha com instrutores qualificados.</p>
+          <span class="badge badge-green">Turmas Trimestrais</span>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Oficinas de Autorresgate e Conquista</h3>
+          <p style="margin-bottom: 16px;">Módulos avançados para escaladores experientes que desejam aprimorar técnicas de segurança e ética de conquista.</p>
+          <span class="badge badge-orange">Módulos Especiais</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CROQUITECA (Com filtro ativo via JS) -->
+    <section id="croquiteca" class="reveal">
+      <div class="section-header">
+        <h2>5. Croquiteca de Pernambuco</h2>
+        <p>Guia das vias e setores de escalada para download em PDF</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos os Setores</button>
+        <button class="filter-btn" data-filter="brejo">Brejo da Madre de Deus</button>
+        <button class="filter-btn" data-filter="toritama">Toritama</button>
+      </div>
+
+      <div class="grid-2" id="croquiGrid">
+        <div class="croqui-card" data-category="brejo">
+          <div class="croqui-img-placeholder">🗺️ Setor Brejo</div>
+          <div class="croqui-body">
+            <h3 class="croqui-title">Pedra do Cachorro</h3>
+            <div class="croqui-meta">
+              <span>📍 Brejo da Madre de Deus</span>
+              <span>🧗 15 Vias</span>
+            </div>
+            <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias esportivas e móveis em granito de excelente qualidade com graduações de 4º a 8º grau.</p>
+            <a href="#" class="btn btn-primary btn-full" download>📥 Baixar Croqui PDF</a>
+          </div>
+        </div>
+
+        <div class="croqui-card" data-category="toritama">
+          <div class="croqui-img-placeholder">🗺️ Setor Toritama</div>
+          <div class="croqui-body">
+            <h3 class="croqui-title">Toritama Rocha</h3>
+            <div class="croqui-meta">
+              <span>📍 Toritama</span>
+              <span>🧗 10 Vias</span>
+            </div>
+            <p style="margin-bottom: 16px; font-size: 0.9rem;">Predomínio de vias esportivas bem protegidas, ideais para treino de resistência e aderência.</p>
+            <a href="#" class="btn btn-primary btn-full" download>📥 Baixar Croqui PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. JUNTE-SE -->
+    <section id="junte-se" class="reveal">
+      <div class="section-header">
+        <h2>6. Junte-se a Nós</h2>
+        <p>Fortaleça a escalada pernambucana tornando-se um associado</p>
+      </div>
+      <div class="card card-cta">
+        <h3 style="margin-bottom: 12px; font-size: 1.2rem;">Por que se associar à Itape?</h3>
+        <ul class="benefit-list">
+          <li>Apoio direto na compra de grampos e materiais de reequipamento.</li>
+          <li>Descontos exclusivos em cursos, eventos e na loja da Itape.</li>
+          <li>Participação ativa nas assembleias e decisões da associação.</li>
+        </ul>
+        <a href="https://tr.ee/kqN9OQiu5_" target="_blank" class="btn btn-whatsapp">💬 Falar no WhatsApp para Associar-se</a>
+      </div>
+    </section>
+
+    <!-- 7. LOJA -->
+    <section id="loja" class="reveal">
+      <div class="section-header">
+        <h2>7. Loja Itape</h2>
+        <p>Produtos oficiais com renda 100% revertida para as vias de PE</p>
+      </div>
+      <div class="grid-3">
+        <div class="loja-card">
+          <div class="loja-img">👕 Camisa Oficial</div>
+          <h3 class="loja-title">Camisa Oficial Itape</h3>
+          <div class="loja-price">R$ --,--</div>
+          <a href="https://tr.ee/kqN9OQiu5_" target="_blank" class="btn btn-whatsapp btn-full">Comprar no WhatsApp</a>
+        </div>
+        <div class="loja-card">
+          <div class="loja-img">🎒 Saco de Magnésio</div>
+          <h3 class="loja-title">Saco de Magnésio</h3>
+          <div class="loja-price">R$ --,--</div>
+          <a href="https://tr.ee/kqN9OQiu5_" target="_blank" class="btn btn-whatsapp btn-full">Comprar no WhatsApp</a>
+        </div>
+        <div class="loja-card">
+          <div class="loja-img">🏷️ Kit Adesivos</div>
+          <h3 class="loja-title">Kit Adesivos Rochosos</h3>
+          <div class="loja-price">R$ --,--</div>
+          <a href="https://tr.ee/kqN9OQiu5_" target="_blank" class="btn btn-whatsapp btn-full">Comprar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. DIRETORIA -->
+    <section id="diretoria" class="reveal">
+      <div class="section-header">
+        <h2>8. Diretoria</h2>
+        <p>Gestão atual da Associação Itape</p>
+      </div>
+      <div class="grid-2">
+        <div class="direct-member">
+          <div class="avatar">PRES</div>
+          <div>
+            <div class="member-name">[Nome do Presidente]</div>
+            <div class="member-role">Presidente</div>
+          </div>
+        </div>
+        <div class="direct-member">
+          <div class="avatar">DIR</div>
+          <div>
+            <div class="member-name">[Nome do Diretor Técnico]</div>
+            <div class="member-role">Diretoria Técnica & Meio Ambiente</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. ESTATUTO -->
+    <section id="estatuto" class="reveal">
+      <div class="section-header">
+        <h2>9. Estatuto e Termos</h2>
+        <p>Documentos oficiais e normas de responsabilidade</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card-title">Estatuto Social Itape</h3>
+          <p style="margin-bottom: 16px;">Documento fundacional registrado com as diretrizes de funcionamento da associação.</p>
+          <a href="#" class="btn btn-outline-dark" download>📄 Baixar Estatuto (PDF)</a>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Termo de Responsabilidade</h3>
+          <p style="margin-bottom: 16px;">Termo padrão para participação em eventos, mutirões e atividades de rocha.</p>
+          <a href="#" class="btn btn-outline-dark" download>📄 Baixar Termo (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTATOS -->
+    <section id="contatos" class="reveal">
+      <div class="section-header">
+        <h2>10. Contatos & Redes</h2>
+        <p>Conecte-se com a comunidade de escalada de Pernambuco</p>
+      </div>
+      <div class="social-links-grid">
+        <a href="https://www.instagram.com/itapescalada/" target="_blank" class="social-card">
+          <span>📸</span> Instagram (@itapescalada)
+        </a>
+        <a href="https://tr.ee/kqN9OQiu5_" target="_blank" class="social-card">
+          <span>💬</span> WhatsApp / Tree Oficial
+        </a>
+        <a href="#" class="social-card">
+          <span>▶️</span> Canal do YouTube
+        </a>
+        <a href="mailto:contato@itapeescalada.com.br" class="social-card">
+          <span>✉️</span> E-mail Oficial
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>ITAPÉ - Associação de Escalada de Pernambuco</strong></p>
+    <p>Promovendo a escalada segura e sustentável em solo pernambucano.</p>
+    <p class="footer-sub">Site atualizado a partir da antiga plataforma ASPER.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
