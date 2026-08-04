@@ -32,9 +32,9 @@
     <a href="#quem-somos" class="tab-pill active">Quem Somos</a>
     <a href="#atividades" class="tab-pill">Atividades</a>
     <a href="#indoor" class="tab-pill">Indoor</a>
-    <a href="#cursos" class="tab-pill">Cursos</a>
     <a href="#croquiteca" class="tab-pill">Croquiteca</a>
     <a href="#junte-se" class="tab-pill">Junte-se</a>
+    <a href="#cursos" class="tab-pill">Cursos</a>
     <a href="#loja" class="tab-pill">Loja</a>
     <a href="#diretoria" class="tab-pill">Diretoria</a>
     <a href="#estatuto" class="tab-pill">Estatuto</a>
@@ -53,9 +53,9 @@
       <a href="#quem-somos" class="drawer-link">1. Quem Somos & História</a>
       <a href="#atividades" class="drawer-link">2. Atividades e Ações</a>
       <a href="#indoor" class="drawer-link">3. Escalada Indoor</a>
-      <a href="#cursos" class="drawer-link">4. Cursos e Formação</a>
-      <a href="#croquiteca" class="drawer-link">5. Croquiteca (Vias PE)</a>
-      <a href="#junte-se" class="drawer-link">6. Junte-se a Nós</a>
+      <a href="#croquiteca" class="drawer-link">4. Croquiteca (Vias PE)</a>
+      <a href="#junte-se" class="drawer-link">5. Junte-se a Nós</a>
+      <a href="#cursos" class="drawer-link">6. Cursos e Formação</a>
       <a href="#loja" class="drawer-link">7. Loja Oficial</a>
       <a href="#diretoria" class="drawer-link">8. Diretoria</a>
       <a href="#estatuto" class="drawer-link">9. Estatuto & Termos</a>
@@ -79,7 +79,7 @@
     <!-- 1. QUEM SOMOS -->
     <section id="quem-somos" class="reveal">
       <div class="section-header">
-        <h2>Quem Somos, Missão e Visão</h2>
+        <h2>Quem Somos</h2>
         <p>A identidade e o compromisso da Associação de Escalada de Pernambuco</p>
       </div>
       
@@ -92,7 +92,7 @@
 
         <div class="card border-accent-green">
           <h3 class="card-title text-green">👁️ Visão</h3>
-          <p>A ITAPÉ é guiada pelo compromisso com a segurança, a ética esportiva e o respeito ao meio ambiente. Valoriza a colaboração, o compartilhamento de conhecimento e o crescimento coletivo da comunidade.</p>
+          <p>A ITAPE é guiada pelo compromisso com a segurança, a ética esportiva e o respeito ao meio ambiente. Valoriza a colaboração, o compartilhamento de conhecimento e o crescimento coletivo da comunidade.</p>
           <p style="margin-top: 12px;">Defende a inclusão e o acesso democrático à prática da escalada, respeitando normas técnicas e ambientais. Também preza pela responsabilidade, transparência e sustentabilidade em todas as suas ações.</p>
         </div>
       </div>
@@ -117,21 +117,93 @@
     </section>
 
     <!-- 3. INDOOR -->
-    <section id="indoor" class="reveal">
-      <div class="section-header">
-        <h2>Escalada Indoor</h2>
-        <p>Treinamento e iniciação nos muros parceiros</p>
+<section id="indoor" class="reveal">
+  <div class="section-header">
+    <h2>Escalada Indoor</h2>
+    <p>Treinamento e iniciação nos muros parceiros</p>
+  </div>
+  <div class="card">
+    <p style="margin-bottom: 16px;">
+      A escalada indoor é a porta de entrada para muitos praticantes. A Itapé mantém parceria com muros de treino e academias do estado para promover campeonatos regionais e encontros de boulder.
+    </p>
+    <div class="highlight-box">
+      <strong>🧗 Muros Parceiros / Pontos de Treino:</strong>
+      <ul style="margin-top: 10px; list-style: none; padding-left: 0;">
+        <li style="margin-bottom: 6px;">
+          • <a href="https://www.instagram.com/brock.escalada/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-orange, #e65100); font-weight: 600; text-decoration: none;">BRock Escalada</a>
+        </li>
+        <li>
+          • <a href="https://www.instagram.com/fusioncross/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-orange, #e65100); font-weight: 600; text-decoration: none;">Fusion Cross</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 5. CROQUITECA (Com filtro ativo via JS) -->
+<section id="croquiteca" class="reveal">
+  <div class="section-header">
+    <h2>Croquiteca de Pernambuco</h2>
+    <p>Guia das vias e setores de escalada para download em PDF</p>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">Todos os Setores</button>
+    <button class="filter-btn" data-filter="brejo">Brejo da Madre de Deus</button>
+    <button class="filter-btn" data-filter="triunfo">Triunfo</button>
+  </div>
+
+  <div class="grid-2" id="croquiGrid">
+  <!-- Card Brejo da Madre de Deus -->
+  <div class="croqui-card" data-category="brejo">
+    <img src="brejo.jpeg" alt="Escalada em Brejo da Madre de Deus" class="croqui-img" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 18%; border-radius: 8px 8px 0 0;">
+    <div class="croqui-body">
+      <h3 class="croqui-title">📍 Brejo da Madre de Deus</h3>
+      <div class="croqui-meta">
+        <span>20 setores do município</span>
+        <span>🧗 200 Vias</span>
       </div>
-      <div class="card">
-        <p style="margin-bottom: 16px;">A escalada indoor é a porta de entrada para muitos praticantes. A Itapé mantém parceria com muros de treino e academias do estado para promover campeonatos regionais e encontros de boulder.</p>
-        <div class="highlight-box">
-          <strong>🧗 Muros Parceiros / Pontos de Treino:</strong>
-          <p style="margin-top: 6px; color: var(--text-muted);">[Espaço reservado para listar as academias e muros parceiros do Recife e interior]</p>
-        </div>
+      <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em granito de altíssima aderência, variando de falésias curtas e esportivas a imponentes paredes de até 475 metros com proteções fixas, móveis e mistas. Exemplos: Sublimação Direta, Sargento Pincel, Furna e Pedra da Bicuda.</p>
+      <a href="croquiteca_2017_guia_brejo_da_madre_de_deus.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
+    </div>
+  </div>
+
+  <!-- Card Triunfo -->
+  <div class="croqui-card" data-category="triunfo">
+    <img src="triunfo.jpeg" alt="Escalada em Triunfo e Serra Talhada" class="croqui-img" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 40%; border-radius: 8px 8px 0 0;">
+    <div class="croqui-body">
+      <h3 class="croqui-title">📍 Triunfo e Serra Talhada</h3>
+      <div class="croqui-meta">
+        <span>18 Setores</span>
+        <span>🧗 +100 Vias</span>
+      </div>
+      <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em rocha avermelhada e dura (cianito), variando de falésias curtas e esportivas a imponentes paredes de até 170 metros com proteções fixas, móveis e mistas. Exemplos: Moby Dick, 232, Alpinismo Sertanejo e Tripla Nordestina.</p>
+      <a href="croquiteca_2024_guia_triunfo.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+    <!-- 6. JUNTE-SE -->
+    <section id="junte-se" class="reveal">
+      <div class="section-header">
+        <h2>Junte-se a Nós</h2>
+        <p>Fortaleça a escalada pernambucana tornando-se um associado</p>
+      </div>
+      <div class="card card-cta">
+        <h3 style="margin-bottom: 12px; font-size: 1.2rem;">Por que se associar à Itape?</h3>
+        <ul class="benefit-list">
+          <li>Apoio direto na compra de grampos e materiais de reequipamento.</li>
+          <li>Descontos exclusivos em cursos, eventos e na loja da Itape.</li>
+          <li>Participação ativa nas assembleias e decisões da associação.</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPGs3gdWYwWuVT8lb0RzThjg7SOFUuAW08JOL5ZrxyMIZweQ/viewform" target="_blank" class="btn btn-whatsapp">Docs para Associar-se</a>
       </div>
     </section>
 
-    <!-- 4. CURSOS -->
+    <!-- 7. CURSOS -->
     <section id="cursos" class="reveal">
       <div class="section-header">
         <h2>Cursos e Formação</h2>
@@ -151,70 +223,11 @@
       </div>
     </section>
 
-    <!-- 5. CROQUITECA (Com filtro ativo via JS) -->
-    <section id="croquiteca" class="reveal">
-      <div class="section-header">
-        <h2>Croquiteca de Pernambuco</h2>
-        <p>Guia das vias e setores de escalada para download em PDF</p>
-      </div>
-
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">Todos os Setores</button>
-        <button class="filter-btn" data-filter="brejo">Brejo da Madre de Deus</button>
-        <button class="filter-btn" data-filter="toritama">Triunfo</button>
-      </div>
-
-      <div class="grid-2" id="croquiGrid">
-        <div class="croqui-card" data-category="brejo">
-          <div class="croqui-img-placeholder">🗺️ Setor Brejo</div>
-          <div class="croqui-body">
-            <h3 class="croqui-title">📍 Brejo da Madre de Deus</h3>
-            <div class="croqui-meta">
-              <span>20 setores do município</span>
-              <span>🧗 200 Vias</span>
-            </div>
-            <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em granito de altíssima aderência, variando de falésias curtas e esportivas a imponentes paredes de até 475 metros com proteções fixas, móveis e mistas. Exemplos: Sublimação Direta, Sargento Pincel, Furna e Pedra da Bicuda.</p>
-            <a href="croquiteca_2017_guia_brejo_da_madre_de_deus.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
-          </div>
-        </div>
-
-        <div class="croqui-card" data-category="toritama">
-          <div class="croqui-img-placeholder">🗺️ Setor Triunfo</div>
-          <div class="croqui-body">
-            <h3 class="croqui-title">📍 Triunfo e Serra Talhada</h3>
-            <div class="croqui-meta">
-              <span>18 Setores</span>
-              <span>🧗 +100 Vias</span>
-            </div>
-            <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em rocha avermelhada e dura (cianito), variando de falésias curtas e esportivas a imponentes paredes de até 170 metros com proteções fixas, móveis e mistas. Exemplos: Moby Dick, 232, Alpinismo Sertanejo e Tripla Nordestina.</p>
-            <a href="croquiteca_2024_guia_triunfo.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. JUNTE-SE -->
-    <section id="junte-se" class="reveal">
-      <div class="section-header">
-        <h2>Junte-se a Nós</h2>
-        <p>Fortaleça a escalada pernambucana tornando-se um associado</p>
-      </div>
-      <div class="card card-cta">
-        <h3 style="margin-bottom: 12px; font-size: 1.2rem;">Por que se associar à Itape?</h3>
-        <ul class="benefit-list">
-          <li>Apoio direto na compra de grampos e materiais de reequipamento.</li>
-          <li>Descontos exclusivos em cursos, eventos e na loja da Itape.</li>
-          <li>Participação ativa nas assembleias e decisões da associação.</li>
-        </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPGs3gdWYwWuVT8lb0RzThjg7SOFUuAW08JOL5ZrxyMIZweQ/viewform" target="_blank" class="btn btn-whatsapp">Docs para Associar-se</a>
-      </div>
-    </section>
-
-    <!-- 7. LOJA -->
+    <!-- 8. LOJA -->
     <section id="loja" class="reveal">
       <div class="section-header">
         <h2>Loja Itape</h2>
-        <p>Produtos oficiais com renda 100% revertida para as vias de PE</p>
+        <p>Ao adquirir um produto, você também apoia a escalada pernambucana: R$ 10,00 de cada venda são revertidos para a ITAPE.</p>
       </div>
       <div class="grid-3">
         <div class="loja-card">
@@ -238,31 +251,60 @@
       </div>
     </section>
 
-    <!-- 8. DIRETORIA -->
-    <section id="diretoria" class="reveal">
-      <div class="section-header">
-        <h2>Diretoria</h2>
-        <p>Gestão atual da Associação Itape</p>
+    <!-- 9. DIRETORIA -->
+<section id="diretoria" class="reveal">
+  <div class="section-header">
+    <h2>Diretoria</h2>
+    <p>A diretoria da ITAPE para o biênio 2025–2027 é composta por:</p>
+  </div>
+  
+  <!-- Executiva -->
+  <div class="grid-2">
+    <div class="direct-member">
+      <div class="avatar">PRES</div>
+      <div>
+        <div class="member-name">Patricia Manzi</div>
+        <div class="member-role">Presidente</div>
       </div>
-      <div class="grid-2">
-        <div class="direct-member">
-          <div class="avatar">PRES</div>
-          <div>
-            <div class="member-name">[Nome do Presidente]</div>
-            <div class="member-role">Presidente</div>
-          </div>
-        </div>
-        <div class="direct-member">
-          <div class="avatar">DIR</div>
-          <div>
-            <div class="member-name">[Nome do Diretor Técnico]</div>
-            <div class="member-role">Diretoria Técnica & Meio Ambiente</div>
-          </div>
-        </div>
+    </div>
+    
+    <div class="direct-member">
+      <div class="avatar">VCP</div>
+      <div>
+        <div class="member-name">Luis Felipe Ramalho</div>
+        <div class="member-role">Vice-Presidente</div>
       </div>
-    </section>
+    </div>
+    
+    <div class="direct-member">
+      <div class="avatar">TES</div>
+      <div>
+        <div class="member-name">Jane Leite</div>
+        <div class="member-role">Tesoureira</div>
+      </div>
+    </div>
+    
+    <div class="direct-member">
+      <div class="avatar">VCT</div>
+      <div>
+        <div class="member-name">Vitor Wolmer</div>
+        <div class="member-role">Vice-Tesoureiro</div>
+      </div>
+    </div>
+  </div>
 
-    <!-- 9. ESTATUTO -->
+  <!-- Conselho Fiscal -->
+  <div class="card" style="margin-top: 24px;">
+    <h3 class="card-title text-orange" style="margin-bottom: 12px; font-size: 1.1rem;"> Conselho Fiscal</h3>
+    <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 8px;">
+      <li>• Henrique Queiroz</li>
+      <li>• João Gabriel Carvalho</li>
+      <li>• Vanessa Lima</li>
+    </ul>
+  </div>
+</section>
+
+    <!-- 10. ESTATUTO -->
     <section id="estatuto" class="reveal">
       <div class="section-header">
         <h2>Estatuto e Termos</h2>
@@ -287,7 +329,7 @@
       </div>
     </section>
 
-    <!-- 10. CONTATOS -->
+    <!-- 11. CONTATOS -->
     <section id="contatos" class="reveal">
       <div class="section-header">
         <h2>Contatos & Redes</h2>
