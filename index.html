@@ -15,7 +15,7 @@
   <!-- HEADER COM A LOGO -->
   <header class="main-header">
     <a href="#" class="brand">
-      <img src="logoitape.png" alt="ITAPÉ Escalada PE" class="hero-logo">
+      <img src="logoitape.png" alt="ITAPÉ Escalada PE" class="header-logo">
       <div class="brand-text">
         <h1>ITAPE - Caminhos de Pedra </h1>
         <span>Associação Pernambucana de Escalada </span>
@@ -29,7 +29,7 @@
 
   <!-- BARRA DE NAVEGAÇÃO RÁPIDA -->
   <div class="quick-tabs">
-  <c>
+  <nav>
     <a href="#quem-somos" class="tab-pill active">Quem Somos</a>
     <a href="#atividades" class="tab-pill">Atividades</a>
     <a href="#indoor" class="tab-pill">Indoor</a>
@@ -40,7 +40,7 @@
     <a href="#diretoria" class="tab-pill">Diretoria</a>
     <a href="#estatuto" class="tab-pill">Estatuto</a>
     <a href="#contatos" class="tab-pill">Contatos</a>
-  </c>
+  </nav>
   </div>
 
   <!-- MENU LATERAL (DRAWER) -->
@@ -67,7 +67,7 @@
   <!-- HERO TOP BANNER -->
   <section class="hero">
     <span class="hero-badge">⚡ Escalada & Conservação em PE</span>
-    <h2>União na Rocha Pernambucana</h2>
+    <h2>Associação Pernambucana de Escalada</h2>
     <p>Preservando nossos picos, conquistando novas vias e fortalecendo a comunidade da escalada.</p>
     <div class="hero-btns">
       <a href="#croquiteca" class="btn btn-primary">🗺️ Ver Croquiteca</a>
@@ -102,7 +102,7 @@
     <!-- 2. ATIVIDADES -->
     <section id="atividades" class="reveal">
       <div class="section-header">
-        <h2>Atividades e Ações</h2>
+        <h2>Atividades</h2>
         <p>O que fazemos para fortalecer o esporte no estado</p>
       </div>
       <div class="grid-2">
@@ -131,7 +131,7 @@
       <strong>🧗 Muros Parceiros / Pontos de Treino:</strong>
       <ul style="margin-top: 10px; list-style: none; padding-left: 0;">
         <li style="margin-bottom: 6px;">
-          • <a href="https://www.instagram.com/brock.escalada/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-orange, #e65100); font-weight: 600; text-decoration: none;">BRock Escalada</a>
+          • <a href="https://www.instagram.com/brock.escalada/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-orange, #e65100); font-weight: 600; text-decoration: none;">B-Rock Escalada</a>
         </li>
         <li>
           • <a href="https://www.instagram.com/fusioncross/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-orange, #e65100); font-weight: 600; text-decoration: none;">Fusion Cross</a>
@@ -142,7 +142,7 @@
 </section>
 
 
-    <!-- 5. CROQUITECA (Com filtro ativo via JS) -->
+<!-- 5. CROQUITECA (Com filtro ativo via JS) -->
 <section id="croquiteca" class="reveal">
   <div class="section-header">
     <h2>Croquiteca de Pernambuco</h2>
@@ -153,40 +153,53 @@
     <button class="filter-btn active" data-filter="all">Todos os Setores</button>
     <button class="filter-btn" data-filter="brejo">Brejo da Madre de Deus</button>
     <button class="filter-btn" data-filter="triunfo">Triunfo</button>
+    <button class="filter-btn" data-filter="macaparana">Macaparana</button>
   </div>
 
   <div class="grid-2" id="croquiGrid">
-  <!-- Card Brejo da Madre de Deus -->
-  <div class="croqui-card" data-category="brejo">
-    <img src="brejo.jpeg" alt="Escalada em Brejo da Madre de Deus" class="croqui-img" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 18%; border-radius: 8px 8px 0 0;">
-    <div class="croqui-body">
-      <h3 class="croqui-title">📍 Brejo da Madre de Deus</h3>
-      <div class="croqui-meta">
-        <span>20 setores do município</span>
-        <span>🧗 200 Vias</span>
+    <!-- Card Brejo da Madre de Deus -->
+    <div class="croqui-card" data-category="brejo">
+      <img src="brejo.jpeg" alt="Escalada em Brejo da Madre de Deus" class="croqui-img" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 18%; border-radius: 8px 8px 0 0;">
+      <div class="croqui-body">
+        <h3 class="croqui-title">📍 Brejo da Madre de Deus</h3>
+        <div class="croqui-meta">
+          <span>20 setores do município</span>
+          <span>🧗 200 Vias</span>
+        </div>
+        <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em granito de altíssima aderência, variando de falésias curtas e esportivas a imponentes paredes de até 475 metros com proteções fixas, móveis e mistas. Exemplos: Sublimação Direta, Sargento Pincel, Furna e Pedra da Bicuda.</p>
+        <a href="croquiteca_2017_guia_brejo_da_madre_de_deus.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
       </div>
-      <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em granito de altíssima aderência, variando de falésias curtas e esportivas a imponentes paredes de até 475 metros com proteções fixas, móveis e mistas. Exemplos: Sublimação Direta, Sargento Pincel, Furna e Pedra da Bicuda.</p>
-      <a href="croquiteca_2017_guia_brejo_da_madre_de_deus.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
     </div>
-  </div>
 
-  <!-- Card Triunfo -->
-  <div class="croqui-card" data-category="triunfo">
-    <img src="triunfo.jpeg" alt="Escalada em Triunfo e Serra Talhada" class="croqui-img" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 40%; border-radius: 8px 8px 0 0;">
-    <div class="croqui-body">
-      <h3 class="croqui-title">📍 Triunfo e Serra Talhada</h3>
-      <div class="croqui-meta">
-        <span>18 Setores</span>
-        <span>🧗 +100 Vias</span>
+    <!-- Card Triunfo -->
+    <div class="croqui-card" data-category="triunfo">
+      <img src="triunfo.jpeg" alt="Escalada em Triunfo e Serra Talhada" class="croqui-img" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 40%; border-radius: 8px 8px 0 0;">
+      <div class="croqui-body">
+        <h3 class="croqui-title">📍 Triunfo e Serra Talhada</h3>
+        <div class="croqui-meta">
+          <span>18 Setores</span>
+          <span>🧗 +100 Vias</span>
+        </div>
+        <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em rocha avermelhada e dura (cianito), variando de falésias curtas e esportivas a imponentes paredes de até 170 metros com proteções fixas, móveis e mistas. Exemplos: Moby Dick, 232, Alpinismo Sertanejo e Tripla Nordestina.</p>
+        <a href="croquiteca_2024_guia_triunfo.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
       </div>
-      <p style="margin-bottom: 16px; font-size: 0.9rem;">Vias em rocha avermelhada e dura (cianito), variando de falésias curtas e esportivas a imponentes paredes de até 170 metros com proteções fixas, móveis e mistas. Exemplos: Moby Dick, 232, Alpinismo Sertanejo e Tripla Nordestina.</p>
-      <a href="croquiteca_2024_guia_triunfo.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
     </div>
-  </div>
-</div>
-  </div>
+
+    <!-- Card Macaparana (Pedra do Bico) -->
+    <div class="croqui-card" data-category="macaparana">
+      <img src="macaparana.JPG" alt="Escalada na Pedra do Bico em Macaparana" class="croqui-img" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 18%; border-radius: 8px 8px 0 0;">
+      <div class="croqui-body">
+        <h3 class="croqui-title">📍 Macaparana (Pedra do Bico)</h3>
+        <div class="croqui-meta">
+          <span>10 Setores do complexo</span>
+          <span>🧗 38 Vias</span>
+        </div>
+        <p style="margin-bottom: 16px; font-size: 0.9rem;">Localizada na divisa PE/PB com acesso por Macaparana[cite: 1]. Oferece vias esportivas e móveis em granito de excelente qualidade[cite: 1]. Exemplos: Liberdade, Ideia de Jerico, Túnel de Vento e Brilho Eterno[cite: 1].</p>
+        <a href="croquiteca_macaparana.pdf" class="btn btn-primary btn-full" download>📥 Baixar Croquiteca em PDF</a>
+      </div>
+    </div>
+  </div> <!-- Fechamento correto do id="croquiGrid" -->
 </section>
-
     <!-- 6. JUNTE-SE -->
     <section id="junte-se" class="reveal">
       <div class="section-header">
@@ -239,8 +252,8 @@
         </div>
         <div class="loja-card">
           <div class="loja-img">🎒 Saco de Magnésio</div>
-          <h3 class="loja-title">Saco de Magnésio</h3>
-          <div class="loja-price">R$ --,--</div>
+          <h3 class="loja-title">Canecas</h3>
+          <div class="loja-price">R$ 39,90 </div>
           <a href="https://api.whatsapp.com/message/IMEWV4XRUIP2C1?autoload=1&app_absent=0" target="_blank" class="btn btn-whatsapp btn-full">Comprar no WhatsApp</a>
         </div>
         <div class="loja-card">

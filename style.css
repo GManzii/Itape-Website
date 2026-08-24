@@ -77,7 +77,7 @@ body {
 }
 .overlay.active { display: block; opacity: 1; }
 
-/* BARRA DE NAVEGAÇÃO RÁPIDA (SLIDE) */
+/* BARRA DE NAVEGAÇÃO RÁPIDA (CORES OFICIAIS ITAPÉ) */
 .quick-tabs {
   position: sticky; top: 76px; z-index: 999;
   background: var(--bg-card); display: flex; overflow-x: auto; scrollbar-width: none;
@@ -85,27 +85,74 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.03);
 }
 .quick-tabs::-webkit-scrollbar { display: none; }
-.tab-pill {
-  background: var(--color-sand-bg); color: var(--text-dark); text-decoration: none;
-  padding: 8px 18px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;
-  white-space: nowrap; transition: 0.2s; border: 1px solid transparent;
-}
-.tab-pill.active, .tab-pill:hover { background: var(--color-orange); color: #FFF; }
 
-/* HERO BANNER */
+.tab-pill {
+  background: var(--color-sand-bg); 
+  color: var(--text-dark) !important; /* Força a cor do texto escura */
+  text-decoration: none;
+  padding: 8px 18px; 
+  border-radius: 20px; 
+  font-size: 0.85rem; 
+  font-weight: 600;
+  white-space: nowrap; 
+  transition: all 0.2s ease; 
+  border: 1px solid transparent;
+}
+
+/* Estado ativo (aba selecionada) e efeito hover */
+.tab-pill.active, 
+.tab-pill:hover,
+.tab-pill:focus { 
+  background-color: var(--color-orange) !important; /* Laranja da ITAPÉ */
+  color: #FFFFFF !important; /* Texto branco */
+  border-color: var(--color-orange);
+}
+/* HERO BANNER COM FOTO MAIS CLARA */
 .hero {
-  background: linear-gradient(180deg, var(--bg-card) 0%, var(--color-sand-bg) 100%);
-  color: var(--text-dark); padding: 60px 24px 50px; text-align: center;
+  /* Altere 'fundo-hero.jpg' para o nome do seu arquivo */
+  background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url('fundo.jpg') center/cover no-repeat;
+  
+  color: #FFFFFF; 
+  padding: 80px 24px 70px; 
+  text-align: center;
   border-bottom: 1px solid var(--border-light);
+  position: relative;
 }
+
+/* Sombra reforçada nos textos para manter a leitura com o fundo mais claro */
+.hero h2 { 
+  font-family: var(--font-brand); 
+  font-size: 2.4rem; 
+  line-height: 1.2; 
+  margin-bottom: 16px; 
+  color: #FFFFFF; 
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero p { 
+  font-size: 1.1rem; 
+  color: #FFFFFF; 
+  max-width: 680px; 
+  margin: 0 auto 28px; 
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
 .hero-badge { 
-  display: inline-block; background: #F5E6DA; color: var(--color-orange); 
-  padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; 
-  margin-bottom: 16px; letter-spacing: 0.5px; border: 1px solid var(--color-orange);
+  display: inline-block; 
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(8px);
+  color: #FFFFFF; 
+  padding: 6px 16px; 
+  border-radius: 20px; 
+  font-size: 0.85rem; 
+  font-weight: 700; 
+  margin-bottom: 16px; 
+  letter-spacing: 0.5px; 
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
-.hero h2 { font-family: var(--font-brand); font-size: 2.2rem; line-height: 1.2; margin-bottom: 16px; color: var(--text-dark); }
-.hero p { font-size: 1.05rem; color: var(--text-muted); max-width: 680px; margin: 0 auto 28px; }
-.hero-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
 
 /* BOTÕES MODERNOS */
 .btn {
@@ -226,4 +273,17 @@ footer strong { color: #FFF; }
   margin: 0 auto 20px;
   display: block;
   filter: drop-shadow(0 8px 16px rgba(208, 108, 51, 0.25));
+}
+
+.quick-tabs {
+  display: flex;
+  gap: 12px; /* Espaço entre cada botão */
+  overflow-x: auto; /* Permite rolar pro lado em telas menores */
+  padding: 10px 0;
+  white-space: nowrap; /* Impede que os botões quebrem em várias linhas */
+}
+
+.tab-pill.active {
+  background-color: #007bff;
+  color: #fff;
 }

@@ -74,12 +74,9 @@ filterButtons.forEach(button => {
 
     croquiCards.forEach(card => {
       const category = card.getAttribute('data-category');
-      
       if (filterValue === 'all' || category === filterValue) {
         card.style.display = 'block';
-        setTimeout(() => { card.style.opacity = '1'; }, 50);
       } else {
-        card.style.opacity = '0';
         card.style.display = 'none';
       }
     });
