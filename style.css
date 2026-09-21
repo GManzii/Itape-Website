@@ -486,3 +486,167 @@ footer strong { color: #FFF; }
   background-color: #20ba5a;
   transform: translateY(-1px);
 }
+
+/* Estilização da Seção de Cursos & PDF */
+.cursos-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.curso-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Destaque do PDF */
+.pdf-callout {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pdf-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.pdf-info h3 {
+  font-size: 1.3rem;
+  margin: 0 0 6px 0;
+  color: #ffffff;
+}
+
+.pdf-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.btn-pdf-download {
+  background: #ffffff;
+  color: #0369a1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-pdf-download:hover {
+  background: #f0f9ff;
+  transform: translateY(-2px);
+}
+
+/* Informações Complementares */
+.curso-details {
+  padding: 24px;
+}
+
+.curso-meta-bar {
+  display: flex;
+  gap: 20px;
+  background: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #334155;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.curso-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .curso-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.curso-col h4 {
+  font-size: 1rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+  border-left: 3px solid #0284c7;
+  padding-left: 8px;
+}
+
+.curso-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.curso-col ul li, .instrutora-text {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Footer & CTA */
+.curso-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.preco-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.preco-rotulo {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.preco-valor {
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.preco-sub {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.btn-curso-cta {
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
