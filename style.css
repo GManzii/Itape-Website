@@ -253,7 +253,31 @@ footer p { margin-bottom: 8px; }
 footer strong { color: #FFF; }
 .footer-sub { margin-top: 16px; font-size: 0.8rem; color: #9A9E8D; }
 
-/* ESTILOS DA LOGO DA MARCA */
+/* ==========================================================================
+   NOVAS CLASSES DE PADRONIZAÇÃO DE IMAGENS (Adicionadas)
+   ========================================================================== */
+.indoor-img {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.croqui-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* ==========================================================================
+   SEÇÕES ESPECÍFICAS & SOBREPOSIÇÕES CORRIGIDAS
+   ========================================================================== */
+
+/* MARCA E LOGOS */
 .header-logo {
   height: 48px;
   width: auto;
@@ -275,60 +299,45 @@ footer strong { color: #FFF; }
   filter: drop-shadow(0 8px 16px rgba(208, 108, 51, 0.25));
 }
 
-.quick-tabs {
-  display: flex;
-  gap: 12px; /* Espaço entre cada botão */
-  overflow-x: auto; /* Permite rolar pro lado em telas menores */
-  padding: 10px 0;
-  white-space: nowrap; /* Impede que os botões quebrem em várias linhas */
-}
-
-.tab-pill.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-/* Container da Imagem */
+/* PADRONIZAÇÃO DA LOJA ITAPÉ */
 .loja-img {
   width: 100%;
-  height: 220px; /* Define uma altura fixa para padronizar todos os cards */
-  border-radius: 12px; /* Bordas arredondadas */
-  overflow: hidden; /* Corta o excesso da imagem que sair do raio da borda */
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
   display: flex;
-  justify-content: center; /* Centraliza a imagem horizontalmente */
-  align-items: center;     /* Centraliza a imagem verticalmente */
-  background-color: #f0f0f0; /* Fundo neutro enquanto a imagem carrega */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-sand-bg);
+  margin-bottom: 16px;
 }
 
-/* Propriedades da Imagem (Zoom e Enquadramento) */
 .loja-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz o zoom proporcional mantendo o enquadramento sem esticar */
-  object-position: center; /* Garante o foco no centro da foto */
-  transition: transform 0.3s ease; /* Transição suave para efeito de interatividade */
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
 }
 
-/* Opcional: Efeito de zoom leve ao passar o mouse por cima do card */
 .loja-card:hover .loja-img img {
-  transform: scale(1.05); /* Aplica um zoom de 5% ao passar o mouse */
+  transform: scale(1.05);
 }
 
-/* Estrutura Principal da Seção */
+/* SEÇÃO DE ATIVIDADES E EVENTOS */
 .atividades-section {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* Card Principal (Split Layout) */
 .evento-card-hero {
   display: grid;
   grid-template-columns: 1fr;
   gap: 28px;
-  background: #ffffff;
+  background: var(--bg-card);
   border-radius: 12px;
-  border: 1px solid #e5e0d8;
+  border: 1px solid var(--border-light);
   padding: 24px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
@@ -341,27 +350,57 @@ footer strong { color: #FFF; }
   }
 }
 
-/* Coluna da Imagem */
 .evento-media {
   position: relative;
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f7f5f0;
+  background-color: var(--color-sand-bg);
 }
 
+/* AUMENTO DA ALTURA DAS FOTOS DOS CARDS */
 .evento-media img {
   width: 100%;
-  height: auto;
+  height: 400px; /* Aumentado de 240px para 350px para dar mais destaque */
   display: block;
   object-fit: cover;
+}
+
+/* GRUPO DE BOTÕES */
+.evento-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* BOTÃO SECUNDÁRIO (SEJA SÓCIO) */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-orange);
+  border: 2px solid var(--color-orange);
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-orange);
+  color: #ffffff;
 }
 
 .badge-status {
   position: absolute;
   top: 14px;
   left: 14px;
-  background-color: #c85a32; /* Terracota */
+  background-color: var(--color-orange);
   color: #ffffff;
   font-size: 0.72rem;
   font-weight: 700;
@@ -371,7 +410,6 @@ footer strong { color: #FFF; }
   border-radius: 4px;
 }
 
-/* Coluna de Informações */
 .evento-content {
   display: flex;
   flex-direction: column;
@@ -379,20 +417,19 @@ footer strong { color: #FFF; }
 
 .evento-title {
   font-size: 1.75rem;
-  color: #222222;
+  color: var(--text-dark);
   margin-bottom: 8px;
   font-weight: 700;
   line-height: 1.25;
 }
 
 .evento-desc {
-  color: #555555;
+  color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-/* Grid 2x2 dos Ícones e Dados */
 .evento-grid-info {
   display: grid;
   grid-template-columns: 1fr;
@@ -410,35 +447,34 @@ footer strong { color: #FFF; }
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f7f5f0;
+  background: var(--color-sand-bg);
   padding: 10px 14px;
   border-radius: 6px;
-  border: 1px solid #eae6de;
+  border: 1px solid var(--border-light);
 }
 
 .info-icon {
   width: 18px;
   height: 18px;
-  stroke: #c85a32;
+  stroke: var(--color-orange);
   flex-shrink: 0;
 }
 
 .info-label {
   display: block;
   font-size: 0.7rem;
-  color: #777777;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .info-item strong {
   font-size: 0.88rem;
-  color: #222222;
+  color: var(--text-dark);
 }
 
-/* Banner de Sócio ITAPE */
 .socio-banner {
-  background-color: #1e3a2b; /* Verde Floresta */
+  background-color: var(--color-green-olive);
   color: #ffffff;
   padding: 14px 16px;
   border-radius: 6px;
@@ -451,7 +487,7 @@ footer strong { color: #FFF; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  color: #a3d9a5;
+  color: var(--color-sand-bg);
   margin-bottom: 2px;
 }
 
@@ -459,35 +495,18 @@ footer strong { color: #FFF; }
   margin: 0;
   font-size: 0.88rem;
   line-height: 1.4;
-  color: #e0ece4;
-}
-
-.socio-banner strong {
   color: #ffffff;
 }
-
-/* Botão de WhatsApp */
-.btn-event-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background-color: #25d366;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+.atividades-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 24px;
 }
 
-.btn-event-cta:hover {
-  background-color: #20ba5a;
-  transform: translateY(-1px);
-}
-
-/* Estilização da Seção de Cursos & PDF */
+/* ==========================================================================
+   SEÇÃO DE CURSOS (PALETA EM TONS QUENTES / ALARANJADOS)
+   ========================================================================== */
 .cursos-section {
   padding: 40px 20px;
   max-width: 1000px;
@@ -495,16 +514,16 @@ footer strong { color: #FFF; }
 }
 
 .curso-card {
-  background: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 12px rgba(42, 47, 29, 0.05);
   overflow: hidden;
 }
 
-/* Destaque do PDF */
+/* BANNER DE DESTAQUE DO PDF (Gradiente Laranja e Terracota) */
 .pdf-callout {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, var(--color-orange) 0%, #a0471a 100%);
   color: #ffffff;
   padding: 24px;
   display: flex;
@@ -515,31 +534,35 @@ footer strong { color: #FFF; }
 }
 
 .pdf-badge {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
   margin-bottom: 8px;
+  letter-spacing: 0.5px;
 }
 
 .pdf-info h3 {
   font-size: 1.3rem;
   margin: 0 0 6px 0;
   color: #ffffff;
+  font-family: var(--font-brand);
 }
 
 .pdf-info p {
   margin: 0;
   font-size: 0.9rem;
-  opacity: 0.9;
+  opacity: 0.95;
   max-width: 600px;
+  color: #fff3e0;
 }
 
 .btn-pdf-download {
   background: #ffffff;
-  color: #0369a1;
+  color: var(--color-orange);
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
@@ -549,29 +572,32 @@ footer strong { color: #FFF; }
   align-items: center;
   gap: 8px;
   white-space: nowrap;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-pdf-download:hover {
-  background: #f0f9ff;
+  background: #fff3e0;
   transform: translateY(-2px);
+  color: #a0471a;
 }
 
-/* Informações Complementares */
+/* BARRA DE METADADOS & CONTEÚDO */
 .curso-details {
-  padding: 24px;
+  padding: 28px 24px;
 }
 
 .curso-meta-bar {
   display: flex;
   gap: 20px;
-  background: #f8fafc;
-  padding: 12px 16px;
-  border-radius: 8px;
+  background: var(--color-sand-bg);
+  padding: 12px 18px;
+  border-radius: 10px;
   font-size: 0.9rem;
-  color: #334155;
+  color: var(--text-dark);
   margin-bottom: 24px;
   flex-wrap: wrap;
+  border-left: 4px solid var(--color-orange);
 }
 
 .curso-grid {
@@ -588,11 +614,12 @@ footer strong { color: #FFF; }
 }
 
 .curso-col h4 {
-  font-size: 1rem;
-  color: #0f172a;
-  margin-bottom: 10px;
-  border-left: 3px solid #0284c7;
-  padding-left: 8px;
+  font-size: 1.05rem;
+  color: var(--color-orange);
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--color-sand-bg);
+  padding-bottom: 6px;
+  font-family: var(--font-brand);
 }
 
 .curso-col ul {
@@ -601,19 +628,20 @@ footer strong { color: #FFF; }
   margin: 0 0 16px;
 }
 
-.curso-col ul li, .instrutora-text {
-  font-size: 0.9rem;
-  color: #334155;
+.curso-col ul li, 
+.instrutora-text {
+  font-size: 0.92rem;
+  color: var(--text-muted);
   margin-bottom: 8px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-/* Footer & CTA */
+/* RODAPÉ E PREÇO */
 .curso-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--border-light);
   padding-top: 20px;
   flex-wrap: wrap;
   gap: 16px;
@@ -626,27 +654,20 @@ footer strong { color: #FFF; }
 
 .preco-rotulo {
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-muted);
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .preco-valor {
-  font-size: 1.5rem;
-  color: #0f172a;
+  font-size: 1.6rem;
+  color: var(--color-orange);
+  font-weight: 800;
+  font-family: var(--font-brand);
 }
 
 .preco-sub {
-  font-size: 0.75rem;
-  color: #64748b;
-}
-
-.btn-curso-cta {
-  background-color: #25d366;
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
