@@ -272,7 +272,22 @@ footer strong { color: #FFF; }
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+.foto-container {
+  position: relative;
+  display: inline-block; /* Mantém o container do tamanho exato da imagem */
+}
 
+.foto-credito {
+  position: absolute;
+  bottom: 8px; /* Distância do rodapé da foto */
+  left: 8px;   /* Distância da esquerda */
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro translúcido para dar leitura */
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  pointer-events: none; /* Garante que a tag não atrapalhe cliques na imagem */
+}
 /* ==========================================================================
    SEÇÕES ESPECÍFICAS & SOBREPOSIÇÕES CORRIGIDAS
    ========================================================================== */
