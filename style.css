@@ -733,4 +733,11 @@ footer strong { color: #FFF; }
     font-size: 0.82rem;              /* Tamanho de letra leve e discreto */
     border-radius: 50px;            /* Design em formato cápsula (pill) */
   }
+  /* Ajuste de enquadramento da foto do Mulambada */
+  .img-mulambada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
 }
