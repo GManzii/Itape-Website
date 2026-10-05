@@ -80,11 +80,21 @@ body {
 /* BARRA DE NAVEGAÇÃO RÁPIDA (CORES OFICIAIS ITAPÉ) */
 .quick-tabs {
   position: sticky; top: 76px; z-index: 999;
-  background: var(--bg-card); display: flex; overflow-x: auto; scrollbar-width: none;
-  padding: 12px 20px; gap: 10px; border-bottom: 1px solid var(--border-light);
+  background: var(--bg-card);
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border-light);
   box-shadow: 0 2px 10px rgba(0,0,0,0.03);
 }
-.quick-tabs::-webkit-scrollbar { display: none; }
+
+.quick-tabs nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.quick-tabs nav::-webkit-scrollbar { display: none; }
 
 .tab-pill {
   background: var(--color-sand-bg); 
@@ -685,4 +695,36 @@ footer strong { color: #FFF; }
 .preco-sub {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+/* Correcao botoes */
+/* Aplica as alterações apenas em telas de celular */
+@media (max-width: 768px) {
+  .quick-tabs nav {
+    display: flex;
+    flex-wrap: wrap;          /* Permite quebrar linha */
+    justify-content: center;  /* Centraliza os botões */
+    gap: 10px 6px;            /* 10px de espaço VERTICAL e 6px HORIZONTAL */
+    padding: 8px 5px;
+  }
+
+  .tab-pill {
+    font-size: 13px;          /* Diminui levemente a fonte no celular */
+    padding: 6px 12px;        /* Diminui o espaçamento interno do botão */
+  }
+  /* Crédito das fotos mais discreto */
+  .foto-credito {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    padding: 2px 6px;
+    font-size: 0.68rem;
+    font-weight: 500;
+    border-radius: 4px;
+    pointer-events: none;
+    letter-spacing: 0.2px;
+}
 }
